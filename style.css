@@ -1,0 +1,228 @@
+/* postavljanje osnovnih stilova za stranicu */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* stiliziranje navigacijske trake */
+
+nav {
+  background-color: rgb(37, 37, 37);
+  color: #bb7575;
+  padding: 25px 0;
+  font-size: 1.8em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(102, 188, 209);
+  border-bottom: 2px solid rgb(120, 120, 120);
+  padding-bottom: 20px;
+}
+  
+
+
+/* stiliziranje hero sekcije */
+
+.hero {
+  background-image: url('https://blog.thinkreliability.com/hubfs/shutterstock_2109521012%20%281%29.png');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 180px 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero #slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hero #slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero #slider img.active {
+  opacity: 1;
+}
+
+@keyframes slide {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* stiliziranje sekcije o nama */
+
+.about {
+  background-color: #e9edf0;
+  padding: 50px 0;
+}
+
+.about h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* stiliziranje sekcije usluge */
+
+.services {
+  padding: 50px 0;
+}
+
+.services h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services li {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services li:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.services h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* stiliziranje sekcije kontakt */
+
+
+
+.contact {
+  padding: 50px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact label,
+.contact input,
+.contact textarea,
+.contact button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact label {
+  text-align: center;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+cursor: pointer;
+}
+
+.contact button:hover {
+background-color: #555;
+}
+footer {
+  text-align: center;
+}
+label[for="document"] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
